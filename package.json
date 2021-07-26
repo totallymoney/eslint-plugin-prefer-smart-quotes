@@ -1,0 +1,32 @@
+{
+  "name": "eslint-plugin-prefer-smart-quotes",
+  "version": "1.0.0",
+  "description": "Prefer the use of curly quote/apostrophe characters",
+  "author": "@ljbc1994",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "quotes",
+    "smart-quotes",
+    "smart-quotes-only"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "peerDependencies": {
+    "eslint": ">=0.8.0"
+  },
+  "dependencies": {
+    "requireindex": "^1.2.0",
+    "string.prototype.matchall": "^4.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "mocha": "^9.0.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

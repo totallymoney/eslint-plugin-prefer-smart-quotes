@@ -1,0 +1,11 @@
+node_modules
+*.log
+*.tgz
+.env
+.next
+.DS_Store
+.idea
+.npm
+.eslintcache
+report*
+coverage*
