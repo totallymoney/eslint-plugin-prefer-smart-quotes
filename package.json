@@ -4,6 +4,10 @@
   "description": "Prefer the use of curly quote/apostrophe characters",
   "author": "@ljbc1994",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ljbc1994/eslint-plugin-prefer-smart-quotes.git"
+  },
   "keywords": [
     "eslint",
     "eslint-plugin",
