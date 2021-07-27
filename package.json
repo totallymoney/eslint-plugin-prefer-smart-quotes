@@ -1,12 +1,12 @@
 {
   "name": "eslint-plugin-prefer-smart-quotes",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Prefer the use of curly quote/apostrophe characters",
-  "author": "@ljbc1994",
+  "author": "totallymoney",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ljbc1994/eslint-plugin-prefer-smart-quotes.git"
+    "url": "git@github.com:totallymoney/eslint-plugin-prefer-smart-quotes.git"
   },
   "keywords": [
     "eslint",
