@@ -8,7 +8,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-var rule = require("../../../lib/rules/smart-quotes");
+var rule = require("../../../lib/rules/prefer");
 var RuleTester = require("eslint").RuleTester;
 
 //------------------------------------------------------------------------------
