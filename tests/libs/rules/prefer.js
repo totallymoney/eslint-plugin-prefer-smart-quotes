@@ -209,5 +209,33 @@ ruleTester.run("smart-quotes", rule, {
         },
       ],
     },
+
+    {
+      code: `
+        <Text>
+          Uh-uh. You know, with you it&apos;s always, &apos;Me, me, me!&apos; Wll, 
+          guess that! Now it&apos;s my turn! So you just shut up and pay 
+          attention! You&apos;re mean to me. You insult me and you don&apos;t 
+          appreciate anything that I do! You&apos;re always pushing me around 
+          or pushing me away.
+        </Text>
+      `,
+      output: `
+        <Text>
+          Uh-uh. You know, with you it&apos;s always, &apos;Me, me, me!&apos; Wll, 
+          guess that! Now it&apos;s my turn! So you just shut up and pay 
+          attention! You&apos;re mean to me. You insult me and you don&apos;t 
+          appreciate anything that I do! You&apos;re always pushing me around 
+          or pushing me away.
+        </Text>
+      `,
+      options: ["all"],
+      errors: [
+        {
+          message: `Strings must use curly quotes.`,
+          type: "JSXText",
+        },
+      ],
+    }
   ],
 });
