@@ -4,6 +4,8 @@ Enforce the preferred use of curly quote/apostrophe characters.
 
 **Fixable:** This rule is automatically fixable using the `--fix` flag on the command line.
 
+> This plugin supports converting quotes and apostrophes that have been specified using their `alphanumeric` or `unicode` equivalent into their curly `alphanumeric` or `unicode` values.
+
 ## Installation
 
 You'll first need to install ESLint:
@@ -32,10 +34,22 @@ Add the plugin to your eslint configuration file (`.eslintrc.*`):
 
 To configure the plugin rules:
 
+### Convert all entities into their curly equivalent
+
 ```json
 {
     "rules": {
         "prefer-smart-quotes/prefer": ["error", "all"]
+    }
+}
+```
+
+### Convert alphanumeric values into their curly unicode equivalent
+
+```json
+{
+    "rules": {
+        "prefer-smart-quotes/prefer": ["error", { "inputFormat": "alphanumeric", "outputFormat": "unicode" }]
     }
 }
 ```
