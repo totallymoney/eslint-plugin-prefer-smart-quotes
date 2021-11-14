@@ -5,7 +5,7 @@
 ## Rule Details
 
 This rule enforces the preferred use of curly quotes/apostrophe characters. To ensure consistency, the plugin can also convert quotes 
-and apostrophes that have been specified using their `alphanumeric` or `unicode` equivalent into curly `alphanumeric` or `unicode` 
+and apostrophes that have been specified using their `named` or `numeric` equivalent into curly `numeric` or `named` 
 values.
 
 ## Options
@@ -14,16 +14,16 @@ This rule has two options, a string option and an object option.
 
 **String option:**
 - `"character"` (default) requires the use of curly characters over straight characters (`'`, `"`)
-- `"alphanumeric"` requires the use of curly alphanumeric values over straight alphanumeric values (`&apos;`, `&quot;`)
-- `"unicode"` requires the use of curly unicode values over straight unicode values (`&#39;`, `&#34;`)
+- `"named"` requires the use of curly named values over straight named values (`&apos;`, `&quot;`)
+- `"numeric"` requires the use of curly numeric values over straight numeric values (`&#39;`, `&#34;`)
 - `"all"` requires the use of all curly entities over straight entities
 
 **Object option:**
 
 - `"inputFormat": "character"` requires the use of curly characters over straight characters
-   - "all", "character", "alphanumeric", "unicode" 
+   - "all", "character", "named", "numeric" 
 - `"outputFormat": "all"` specify the output entity format
-   - "all", "character", "alphanumeric", "unicode"
+   - "all", "character", "named", "numeric"
 
 ## Examples
 
@@ -46,7 +46,7 @@ const Component = () => <>That&rsquo;s a nice boulder!<>
 Examples of **inline** usage for this rule:
 
 ```jsx
-/*eslint smart-quotes: ["error", "alphanumeric"]*/
+/*eslint smart-quotes: ["error", "named"]*/
 
-/*eslint smart-quotes: ["error", { outputFormat: "unicode" }]*/
+/*eslint smart-quotes: ["error", { outputFormat: "numeric" }]*/
 ```
