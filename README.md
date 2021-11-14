@@ -4,7 +4,7 @@ Enforce the preferred use of curly quote/apostrophe characters.
 
 **Fixable:** This rule is automatically fixable using the `--fix` flag on the command line.
 
-> This plugin supports converting quotes and apostrophes that have been specified using their `alphanumeric` or `unicode` equivalent into their curly `alphanumeric` or `unicode` values.
+> This plugin supports converting quotes and apostrophes that have been specified using their `numeric` or `named` equivalent into their curly `named` or `numeric` values.
 
 ## Installation
 
@@ -44,12 +44,12 @@ To configure the plugin rules:
 }
 ```
 
-### Convert alphanumeric values into their curly unicode equivalent
+### Convert named values into their curly numeric equivalent
 
 ```json
 {
     "rules": {
-        "prefer-smart-quotes/prefer": ["error", { "inputFormat": "alphanumeric", "outputFormat": "unicode" }]
+        "prefer-smart-quotes/prefer": ["error", { "inputFormat": "named", "outputFormat": "numeric" }]
     }
 }
 ```

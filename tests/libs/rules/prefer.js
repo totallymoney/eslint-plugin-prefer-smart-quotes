@@ -151,7 +151,7 @@ ruleTester.run("smart-quotes", rule, {
     {
       code: 'var string = "This is Jane\'&#39;s friend";',
       output: 'var string = "This is Jane\'&#8217;s friend";',
-      options: ["unicode"],
+      options: ["numeric"],
       errors: [
         {
           message: `Strings must use curly quotes.`,
@@ -163,7 +163,7 @@ ruleTester.run("smart-quotes", rule, {
     {
       code: 'var string = "This is Jane\'&apos;s friend";',
       output: 'var string = "This is Jane\'&rsquo;s friend";',
-      options: ["alphanumeric"],
+      options: ["named"],
       errors: [
         {
           message: `Strings must use curly quotes.`,
@@ -175,7 +175,7 @@ ruleTester.run("smart-quotes", rule, {
     {
       code: 'var string = "This is Jane\'&#39;s friend";',
       output: 'var string = "This is Jane\'&rsquo;s friend";',
-      options: [{ inputFormat: "unicode", outputFormat: "alphanumeric" }],
+      options: [{ inputFormat: "numeric", outputFormat: "named" }],
       errors: [
         {
           message: `Strings must use curly quotes.`,
@@ -188,7 +188,7 @@ ruleTester.run("smart-quotes", rule, {
       code: "var string = 'My name is \"Barry\" and your name is &quot;Jane&#34;';",
       output:
         "var string = 'My name is &ldquo;Barry&rdquo; and your name is &ldquo;Jane&rdquo;';",
-      options: [{ inputFormat: "all", outputFormat: "alphanumeric" }],
+      options: [{ inputFormat: "all", outputFormat: "named" }],
       errors: [
         {
           message: `Strings must use curly quotes.`,
