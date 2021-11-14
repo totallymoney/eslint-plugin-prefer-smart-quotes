@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-prefer-smart-quotes",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Prefer the use of curly quote/apostrophe characters",
   "author": "totallymoney",
   "license": "MIT",
